@@ -1,0 +1,53 @@
+/* Reset CSS defaults */
+body {
+  margin: 0px;
+}
+
+/* Dropdown styling */
+.dropdown {
+  --should-show: none;
+  position: relative;
+}
+
+.dropdown:hover {
+  --should-show: unset
+}
+
+.dropdown > ul {
+  display: var(--should-show);
+
+  /* Resetting the list default styling */
+  list-style-type: none;
+  padding: 0px;
+
+  position: absolute;
+  left: 0px;
+}
+
+/* Utility classes */
+
+.flex {
+  display: flex;
+}
+
+.justfy-between {
+  justify-content: space-between;
+}
+
+.gap-sm {
+  gap: 1rem;
+}
+
+/* Colors */
+
+.bg-primary {
+  background-color: cornflowerblue;
+}
+
+.bg-secondary {
+  background-color: cornsilk;
+}
+
+.bg-tertiary {
+  background-color: teal;
+}
